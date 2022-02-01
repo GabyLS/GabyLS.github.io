@@ -1,0 +1,22 @@
+{{#if listado.length }}
+    {{#each listado}}
+    <a href="https://sony.com" class="card" onclick="agregarCarrito(event,{{id}},this)"></a>    
+        <article class="card__article">
+            <div
+                class="card__image"
+                style="background-image: url(' {{foto}} ')"
+            >
+            </div>
+            <div class="card__content">
+                <h3 class="card__heading"> {{nombre}} </h3>
+                <div class="card__description">
+                    <p class="card__description-price">{{precio}} </p>
+                    <button class="card__description--button">Agregar al carrito</button>
+                </div>
+            </div>
+        </article>
+    </a>
+     {{/each}}
+{{else}}
+    <h3>No se encontraron productos</h3>
+{{/if}}

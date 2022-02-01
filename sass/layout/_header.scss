@@ -1,0 +1,213 @@
+/*********************************
+            HEADER
+*********************************/
+.main-header {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+    display: none;
+   
+    &:checked + .nav-bar {
+        display: block;
+    
+        & ~ .search-bar .menu-toggle__label {
+            background-color: rgb(197, 197, 196);
+        }
+    }
+}
+
+
+/*********************************
+            NAV BAR
+*********************************/
+.nav-bar {
+    background-image: url(../img/header/header-bg3jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 23px 0;
+
+    &__nav-list {
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-end;
+        margin-right: 10px;
+    }
+
+    &__nav-item {
+        text-align: center;
+    }
+
+    &__nav-link {
+        box-shadow: 3px 4px 6px 0px #8a8a8a;
+        background:linear-gradient(to bottom, #999499 5%, #424142 100%);
+        background-color:#999499;
+        border-radius:18px;
+        border:1px solid #535153;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:15px;
+        padding:8px 18px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #797979;
+        margin-left: 5px;
+    }
+
+    &__nav-link:hover{
+        background:linear-gradient(to bottom, #424142 5%, #969396 100%);
+        background-color:#424142;
+    }
+
+    &__nav-link:active{
+        position:relative;
+        top:1px;
+      }
+}
+
+
+/*********************************
+            SEARCH BAR
+*********************************/
+.search-bar {
+    background: rgb(75,219,255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(75,219,255,1) 0%, rgba(0,78,98,1) 46%, rgba(0,62,78,1) 50%, rgba(0,75,94,1) 53%, rgba(0,168,210,1) 76%, rgba(0,138,172,1) 87%, rgba(0,98,122,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(75,219,255,1) 0%,rgba(0,78,98,1) 46%,rgba(0,62,78,1) 50%,rgba(0,75,94,1) 53%,rgba(0,168,210,1) 76%,rgba(0,138,172,1) 87%,rgba(0,98,122,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(75,219,255,1) 0%,rgba(0,78,98,1) 46%,rgba(0,62,78,1) 50%,rgba(0,75,94,1) 53%,rgba(0,168,210,1) 76%,rgba(0,138,172,1) 87%,rgba(0,98,122,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4bdbff', endColorstr='#00627a',GradientType=0 ); /* IE6-9 */
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &__logo-container,
+    &__form-container {
+        padding: 15px;
+        position: relative;
+    }
+
+    &__logo-container {
+        display: flex;
+        background-image: url(../img/logo/logoconnecticus2.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: 100%;
+        width: 290px;
+        height: 200px;
+        margin-left: 13%;
+        margin-top: -105px;
+        background-color: transparent;
+        z-index: 1;
+    }
+
+    &__form-container {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: right;
+        background: rgb(149,149,149); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(149,149,149,1) 0%, rgba(13,13,13,1) 46%, rgba(1,1,1,1) 50%, rgba(10,10,10,1) 53%, rgba(78,78,78,1) 76%, rgba(56,56,56,1) 87%, rgba(27,27,27,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=0 ); /* IE6-9 */
+    }
+
+    // &__form-label {
+    //     background-color: greenyellow;
+    // }
+
+    &__form-search {
+        background-color: rgb(247, 242, 245);
+        width: 45%;
+        border-radius: 15px;
+        height: 35px;
+    }
+
+    &__form-submit {
+        background-image: url(../img/header/lupa.png);
+        background-repeat: no-repeat;
+        background-size: 30px; 
+        border-radius: 70px;
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 35px; 
+        margin-right: 50px;
+    }
+    
+    &__carrito-container {
+        display: block;
+        background-image: url(../img/header/carrito.png);
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position: center;
+        flex: 0 0 60px;
+        background-color: transparent;
+    }
+}
+
+
+/*********************************
+            MENU TOGGLE
+*********************************/
+.menu-toggle {
+    display: none;
+    background-color: rgb(79, 105, 138);
+    flex: 0 0 3em;
+    position: relative;
+    cursor: pointer;
+
+    &__label {
+        display: block;
+        background-color: rgb(37, 37, 37);
+        width: 100%;
+        height: 100%;
+    }
+
+    &__pan-arriba,
+    &__medallon,
+    &__pan-abajo {
+        display: block;
+        background-color: rgb(93, 149, 175);
+        height: .2em;
+        position: absolute;
+        left: .5em;
+        right: .5em;
+        margin: 0 auto;
+    }
+
+    &__pan-arriba {
+        top: .8em;
+    }
+
+    &__medallon {
+        top: 50%;
+        margin-top: -.15em;
+    }
+
+    &__pan-abajo {
+        bottom: .8em;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .main-header {
+        flex-direction: column-reverse;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-bar__nav-list {
+        flex-direction: column;
+    }
+    
+    .search-bar__logo-container{
+        display: none;
+    }
+}

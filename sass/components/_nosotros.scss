@@ -1,0 +1,115 @@
+.nosotros-primer, .nosotros-segundo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*position: relative;*/
+    width: 100%;
+    height: 430px;
+    background-color: #d0d0d0;
+    background-image: linear-gradient(135deg, #d0d0d0 0%, #f9f9f9 100%);
+  
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
+    
+    margin: 80px auto;
+    box-shadow: 0px 0px 6px 6px rgba(0,0,0,0.39);
+  -webkit-box-shadow: 0px 0px 6px 6px rgba(0,0,0,0.39);
+  -moz-box-shadow: 0px 0px 6px 6px rgba(0,0,0,0.39);
+  }
+  
+  
+  
+  .nosotros-primer__img{
+    width: 45%;
+    height: 350px;
+    background-image: url(../img/fondos/casa-nosotros.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    
+    
+  }
+  
+  .nosotros-primer__empresa {
+    font-family:'Questrial', sans-serif;
+    font-size: 19px;
+    width: 450px;
+    color: #333;
+    margin-left: 5%;
+    line-height: 25px;
+    text-align: justify;
+  }
+  
+  .nosotros-segundo__img{
+    width: 45%;
+    height: 350px;
+    background-image: url(../img/fondos/seguridad-vivienda.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    margin-bottom: 15px;
+     
+  }
+  
+  .nosotros-segundo__objetivo {
+    font-family:'Questrial', sans-serif;
+    font-size: 19px;
+    width: 450px;
+    color: #333;
+    margin-right: 5%;
+    line-height: 25px;
+    text-align: justify;
+  }
+  
+  .subtitulo{
+  font-size: 40px;
+  margin-bottom: 30px;
+  }
+  
+  .nosotros-pilar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  }
+  
+  .nosotros-pilar__uno{
+  background-image: url(../img/iconos/calidad.png);
+  
+  }
+  
+  .nosotros-pilar__dos{
+  background-image: url(../img/iconos/honesty.png); 
+  }
+  
+  .nosotros-pilar__tres{
+    background-image: url(../img/iconos/profesionalismo.png);  
+  }
+  
+  .nosotros-pilar__uno, .nosotros-pilar__dos, .nosotros-pilar__tres{
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:10%;
+    height: 130px;
+    margin: 120px auto;
+  }
+  
+  .nosotros-pilar__calidad, .nosotros-pilar__honestidad, .nosotros-pilar__profesionalismo{
+    font-size: 40px;
+    color: #333;
+    display: block;
+    width: 30px;
+    margin-top: -50px;
+    margin-left: -20px;
+    text-align: center;
+  }
+  .nosotros-pilar__calidad{
+    margin-left: 5px;
+  }
+  
+  .nosotros-pilar__profesionalismo{
+  margin-left: -60px;
+  }

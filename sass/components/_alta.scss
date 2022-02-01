@@ -1,0 +1,108 @@
+
+.alta-form {
+  padding-top: 8%;
+  background-image: url(../img/fondos/fondo-camera2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 6px 6px rgba(0,0,0,0.39);
+  -webkit-box-shadow: 0px 0px 6px 6px rgba(0,0,0,0.39);
+  -moz-box-shadow: 0px 0px 6px 6px rgba(0,0,0,0.39);
+
+}
+
+  .alta-input{
+    display: block;
+    width: 70%;
+    margin: 5px auto 10px;
+    padding: 5px;
+  }
+  
+
+  input[type="checkbox"] {
+    display: inline;
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.validation{
+  border: 1px solid red;
+  width: 70%;
+  background-color: rgb(243, 243, 119);
+  color: darkred;
+  margin: 2px auto 10px;
+  border-radius: 5px;
+  display: none;   
+}
+
+#categoria,
+#marca{
+  display: block;
+  width: 70%;
+  margin: 5px auto 10px;
+  padding: 5px;
+}
+
+
+form button {
+  box-shadow: 3px 4px 6px 0px #8a8a8a;
+  background:linear-gradient(to bottom, #999499 5%, #424142 100%);
+  background-color:#999499;
+  border-radius:18px;
+  border:1px solid #535153;
+  display:block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  padding:8px 18px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #797979;
+  margin: 8% auto;
+  margin-bottom: 8%;
+  
+  &:hover {
+    background:linear-gradient(to bottom, #424142 5%, #999499 100%);
+    background-color:#424142;
+  }
+  
+  &:active {
+    position:relative;
+    top:1px;
+  }
+
+}
+table button{
+  margin-top: 20px;
+  margin-left: 5px;
+  width: 80px;
+  height: 35px;
+  font-weight: bold;
+  
+}
+
+table,th,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 90%;
+}
+
+#listado-productos {
+  width: 100%;
+}
+
+th,td {
+  padding:15px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}

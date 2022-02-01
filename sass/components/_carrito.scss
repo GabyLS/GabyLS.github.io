@@ -1,0 +1,16 @@
+.section-carrito {
+    display: none;
+    color: rgb(227, 231, 227);
+    position: fixed;
+    background-color: rgb(44, 44, 44);
+    z-index: 1;
+    top: 85px;
+    left: 950px;
+    right: 40px;
+    bottom: 50px;
+    cursor: pointer;
+    box-shadow: .5em .5em 10em .10em rgb(83, 83, 83);
+    &--visible {
+        display: block;
+    }
+}

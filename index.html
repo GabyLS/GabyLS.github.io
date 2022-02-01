@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="font.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="main-header">
+
+        <input type="checkbox" id="menu">
+
+        <nav class="nav-bar">
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="" id="inicio">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="" id="alta">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="" id="contacto">Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="" id="nosotros">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <div class="search-bar__logo-container">
+               
+            </div>
+            <form class="search-bar__form-container">
+                <!-- <label class="search-bar__form-label" for="busqueda">Buscar</label> -->
+                <input class="search-bar__form-search" id="busqueda" type="search">
+                <input class="search-bar__form-submit" type="submit" value=" ">
+            </form>
+            <div class="search-bar__carrito-container">  
+            </div>
+            <div class="menu-toggle">
+                <label class="menu-toggle__label" for="menu">
+                    <span class="menu-toggle__pan-arriba"></span>
+                    <span class="menu-toggle__medallon"></span>
+                    <span class="menu-toggle__pan-abajo"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+    
+    <div class="section-carrito"></div>
+    
+    <main></main>
+   
+    <footer class="footer">
+        
+        <div class="footer-boton">  
+            <div class="footer-boton__redes">
+                <a class="icon icon-facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="icon icon-twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="icon icon-youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a class="icon icon-instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div> 
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright® 2021 Connecticus Security -- All rights reserved</p>
+        </div>
+    
+    </footer>
+
+    
+    <!-- Código de librerías -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Menues -->
+    <script src="js/menu/alta.js"></script> 
+    <script src="js/menu/nosotros.js"></script>
+    <script src="js/menu/contacto.js"></script>
+    <script src="js/menu/carrito.js"></script>
+    <script src="js/menu/inicio.js"></script>
+
+    
+    <!-- Servicios -->
+    <script src="js/servicios/carrito.js"></script>
+    <script src="js/servicios/producto.js"></script>
+    
+    <!-- Modelos -->
+    <script src="js/modelos/producto.js"></script>
+    <script src="js/modelos/carrito.js"></script>
+
+    <!-- Clientes -->
+    <script src="js/clientes/http.client.js"></script>
+    
+    <!-- Controladores -->
+    <script src="js/controladores/productos.js"></script>
+    <script src="js/controladores/carrito.js"></script>
+
+
+    <!-- Código de arranque -->
+    <script src="js/main.js"></script>
+</body>
+</html>

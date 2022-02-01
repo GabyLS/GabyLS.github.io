@@ -1,0 +1,81 @@
+
+<div class="alta-container">
+
+    <form autocomplete="off" class="alta-form">
+        <!-- Campo de nombre -->
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" class="alta-input">
+        <div class="validation"></div>
+    
+        <!-- Campo de precio -->
+        <label for="precio">Precio</label>
+        <input id="precio" type="text" class="alta-input">
+        <div class="validation"></div>
+    
+        <!-- Campo de stock -->
+        <label for="stock">Stock</label>
+        <input id="stock" type="text" class="alta-input">
+        <div class="validation"></div>
+    
+        <!-- Campo de marca -->
+        <label for="marca">Marca</label>
+        <select id="marca" name="marca" required class="alta-input">
+            <option value="">Seleccioná una opción</option>
+            <option>HikVision</option>
+            <option>Ezviz</option>
+            <option>Alonso</option>
+            <option>Honeywell</option>
+            <option>Chihuahua</option>
+            <option>Toy Terrier</option>
+            <option>Bulldog Inglés</option>
+        </select>
+        <div class="validation"></div>
+    
+        <!-- Campo de categoria -->
+        <label for="categoria">Categoria</label>
+        <select id="categoria" name="categoria" class="alta-input">
+            <option value="">Seleccioná una categoría</option>
+            <optgroup label="Cámaras de seguridad">
+                <option>De interior</option>
+                <option>De exterior</option>
+                <option>Grabadoras</option>
+                <option>Kit</option>
+            </optgroup>
+            <optgroup label="Alarmas">
+                <option>Censores</option>
+                <option>Centrales</option>
+                <option>Kit</option>
+            </optgroup>
+            <!-- <optgroup label="Perros guardianes">
+                <option>Chihuaha</option>
+                <option>Toy Terrier</option>
+                <option>Bulldog Inglés</option>
+            </optgroup> -->
+        </select>
+        <div class="validation"></div>
+    
+        <!-- Campo de foto -->
+        <label for="foto">Foto</label>
+        <input id="foto" type="text" placeholder="Seleccioná una foto" class="alta-input">
+        <div class="validation"></div>
+    
+        <!-- Campo de detalles -->
+        <label for="detalles">Detalles</label>
+        <input id="detalles" type="text" class="alta-input">
+        <div class="validation"></div>
+    
+        <!-- Campo de envio -->
+        <label for="envio">Envio</label>
+        <input id="envio" type="checkbox" class="alta-input">
+        <div class="validation"></div>
+    
+        <button>Agregar</button>
+    </form>
+
+    <hr>
+    <h1>Listado de productos</h1>
+    <br>
+
+    <div id="listado-productos"></div>
+
+</div>
