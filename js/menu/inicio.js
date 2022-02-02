@@ -22,7 +22,7 @@ async function initInicio() {
     console.warn('initInicio()')
     
     var productos = await productoController.obtenerProductos()
-    console.log(productos)
+    // console.log(productos)
     await renderPlantillaListado(productos)
 
     document.querySelector('.section-cards__header p').innerHTML = `Se encontraron ${productos.length} productos`

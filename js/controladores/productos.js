@@ -31,7 +31,7 @@ class ProductoController extends ProductoModel {
         let producto = formularioAlta.leerProductoIngresado()
         formularioAlta.limpiarFormulario()
 
-        let productoActualizado = await ProductoService.actualizarProductoService(id, producto)
+        let productoActualizado = await productoService.actualizarProductoService(id, producto)
         console.log(productoActualizado)
 
         // productos.push(productoActualizado)
